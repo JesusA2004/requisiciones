@@ -8,7 +8,6 @@ import { useLogin, type LoginData } from '@/Composables/useLogin'
 import { ref, watch } from 'vue'
 import { useLoginMotion } from '@/Composables/useLoginMotion'
 import logoMr from '@/img/favicon.ico'
-import ovejaImg from '@/img/oveja.png'
 import logoLogin from '@/img/logo.png'
 
 defineProps({

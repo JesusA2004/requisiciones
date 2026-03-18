@@ -201,7 +201,7 @@
                 </div>
 
                 <span v-show="open" class="ml-3 text-sm font-semibold tracking-wide text-slate-800 dark:text-zinc-100 transition-opacity duration-200 select-none">
-                    MR-LanaERP
+                    Requisiciones
                 </span>
             </div>
 

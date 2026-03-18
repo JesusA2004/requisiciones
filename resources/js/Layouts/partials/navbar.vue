@@ -17,10 +17,6 @@
 
   const page = usePage()
 
-  // URLs de ayuda
-  const SUPPORT_URL = 'https://soporte.mr-lana.com/'
-  const HELP_PDF_URL = '/ayuda/mr-lana-ayuda.pdf'
-
   /**
    * Usuario autenticado (fallback seguro)
    */
@@ -197,19 +193,6 @@
                 Perfil
               </Link>
 
-              <!-- Soporte -->
-              <a
-                :href="SUPPORT_URL"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="group flex items-center gap-2 px-4 py-2.5 text-sm transition-all
-                      text-slate-700 hover:bg-slate-50 hover:text-slate-900
-                      dark:text-zinc-200 dark:hover:bg-zinc-800/50 dark:hover:text-zinc-50"
-              >
-                <span class="h-1.5 w-1.5 rounded-full bg-slate-300/70 group-hover:bg-slate-400/80 dark:bg-zinc-600/70 dark:group-hover:bg-zinc-400/70"></span>
-                Soporte (tickets)
-              </a>
-
               <!-- Guía (Inertia) -->
               <Link
                 :href="route('ayuda.guia')"
@@ -220,19 +203,6 @@
                 <span class="h-1.5 w-1.5 rounded-full bg-slate-300/70 group-hover:bg-slate-400/80 dark:bg-zinc-600/70 dark:group-hover:bg-zinc-400/70"></span>
                 Guía del sistema
               </Link>
-
-              <!-- PDF Ayuda -->
-              <a
-                :href="HELP_PDF_URL"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="group flex items-center gap-2 px-4 py-2.5 text-sm transition-all
-                      text-slate-700 hover:bg-slate-50 hover:text-slate-900
-                      dark:text-zinc-200 dark:hover:bg-zinc-800/50 dark:hover:text-zinc-50"
-              >
-                <span class="h-1.5 w-1.5 rounded-full bg-slate-300/70 group-hover:bg-slate-400/80 dark:bg-zinc-600/70 dark:group-hover:bg-zinc-400/70"></span>
-                PDF de ayuda
-              </a>
 
               <!-- Divider -->
               <div class="my-1 h-px bg-slate-200/80 dark:bg-zinc-800/70"></div>

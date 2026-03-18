@@ -7,9 +7,9 @@ import { Head, Link, useForm } from '@inertiajs/vue3'
 import { useLogin, type LoginData } from '@/Composables/useLogin'
 import { ref, watch } from 'vue'
 import { useLoginMotion } from '@/Composables/useLoginMotion'
-import logoMr from '@/img/favicon-mr-lana-16.ico'
+import logoMr from '@/img/favicon.ico'
 import ovejaImg from '@/img/oveja.png'
-import logoLogin from '@/img/logo-mr-lana.png'
+import logoLogin from '@/img/logo.png'
 
 defineProps({
   canResetPassword: { type: Boolean, default: false },
@@ -87,15 +87,7 @@ watch(
               <InputError :message="errors.password" />
             </div>
 
-            <div class="flex items-center justify-between mt-2">
-              <label class="inline-flex items-center gap-2 text-sm text-slate-700 dark:text-neutral-300 select-none">
-                <input
-                  v-model="form.remember"
-                  type="checkbox"
-                  class="rounded border-slate-300 dark:border-neutral-700"
-                />
-                Recordarme
-              </label>
+            <div class="flex items-center justify-end mt-2">
 
               <Link
                 v-if="canResetPassword"
@@ -127,9 +119,6 @@ watch(
             </button>
           </div>
         </form>
-
-        <!-- Solo móvil -->
-        <img class="login-oveja" :src="ovejaImg" alt="" draggable="false" />
       </div>
     </div>
   </GuestLayout>
@@ -195,7 +184,7 @@ watch(
 /* >=530px: cover con recorte lateral permitido; foco a la izquierda para no cortar oveja del fondo */
 @media (min-width: 530px) {
   .login-bg {
-    background-image: url('@/img/login_background.jpeg');
+    background-image: url('@/img/login_background.jpg');
     background-size: cover;
     background-position: left center;
   }

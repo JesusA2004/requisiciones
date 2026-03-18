@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import logoMr from '@/img/favicon-mr-lana-16.ico'
+import logoMr from '@/img/favicon.ico'
 </script>
 
 <template>
